@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.1622
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TzyEditor.Translate", "TzyEditor.Translate\TzyEditor.Translate.csproj", "{9B980DB0-D891-472D-A037-44F9DCCE409C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TzyEditor.TranslateCore", "TzyEditor.TranslateCore\TzyEditor.TranslateCore.csproj", "{4105369A-80E4-4020-8CB0-3ED5757DA9AF}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "ControllerPlugin", "ControllerPlugin", "{8BF0B936-A15D-4448-AE5D-8A5F5C7F50E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TranslateArchivePlugin", "TranslateArchivePlugin\TranslateArchivePlugin.csproj", "{27331FC1-DB69-463A-AC58-A530C1CF97CD}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9B980DB0-D891-472D-A037-44F9DCCE409C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9B980DB0-D891-472D-A037-44F9DCCE409C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9B980DB0-D891-472D-A037-44F9DCCE409C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9B980DB0-D891-472D-A037-44F9DCCE409C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4105369A-80E4-4020-8CB0-3ED5757DA9AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4105369A-80E4-4020-8CB0-3ED5757DA9AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4105369A-80E4-4020-8CB0-3ED5757DA9AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4105369A-80E4-4020-8CB0-3ED5757DA9AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{27331FC1-DB69-463A-AC58-A530C1CF97CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{27331FC1-DB69-463A-AC58-A530C1CF97CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{27331FC1-DB69-463A-AC58-A530C1CF97CD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{27331FC1-DB69-463A-AC58-A530C1CF97CD}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{27331FC1-DB69-463A-AC58-A530C1CF97CD} = {8BF0B936-A15D-4448-AE5D-8A5F5C7F50E0}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {4958E5AA-0AB1-493E-9DE1-B960C40AE933}
+	EndGlobalSection
+EndGlobal

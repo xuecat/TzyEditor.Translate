@@ -1,0 +1,16 @@
+node_modules/
+dist/
+.vs/
+app/data
+app/npm-debug.log
+*.cache
+*.user
+bin/
+binu/
+TzyEditor.TranslateCore/bin/
+TzyEditor.TranslateCore/obj/
+TzyEditor.Translate/bin/
+TzyEditor.Translate/obj/
+TranslateArchivePlugin/obj/
+TranslateArchivePlugin/bin/
+

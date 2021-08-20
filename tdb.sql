@@ -1,0 +1,32 @@
+CREATE DATABASE IF NOT EXISTS edittranslate;
+
+DROP TABLE IF EXISTS tbfilelibrary;
+CREATE TABLE `tbfilelibrary` (
+    `FileId` int(11) NOT NULL AUTO_INCREMENT,
+    `FilePath` varchar(2000) DEFAULT NULL,
+    PRIMARY KEY (`FileId`) USING BTREE
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+
+DROP TABLE IF EXISTS tbtranslatearchive;
+CREATE TABLE `tbtranslatearchive` (
+    `TID` int(11) NOT NULL AUTO_INCREMENT,
+    `FileId` int(11) NOT NULL,
+    `LogId` int(11) NOT NULL,
+    `Trunk` varchar(64) DEFAULT NULL,
+    `Status` int(11) NOT NULL,
+    PRIMARY KEY (`TID`) USING BTREE,
+    INDEX IDX_FILEID(`FileId`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+
+DROP TABLE IF EXISTS tbtranslatehistory;
+CREATE TABLE `tbtranslatehistory` (
+    `ID` int(11) NOT NULL AUTO_INCREMENT,
+    `TID` int(11) NOT NULL,
+    `Type` int(11) NOT NULL,
+    `Time` datetime DEFAULT NULL,
+    `User` varchar(64) DEFAULT NULL,
+    PRIMARY KEY (`ID`) USING BTREE,
+    INDEX IDX_FILEID(`TID`)
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4 COLLATE utf8mb4_0900_ai_ci ROW_FORMAT=DYNAMIC;
+
+
